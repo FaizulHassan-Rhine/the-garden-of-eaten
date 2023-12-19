@@ -1,0 +1,17 @@
+/* .img-size {
+  width: 700px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 639px) {
+  .img-size {
+    width: 400px;
+    height: 220px;
+  }
+} */
+.homee {
+  background-image: url(../../images/price_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100%; */
+}
