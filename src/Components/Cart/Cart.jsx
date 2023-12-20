@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import "./Cart.css";
+import { MdDeleteForever } from "react-icons/md";
 
 const Cart = () => {
   const [total, setTotal] = useState(0);
@@ -58,24 +59,35 @@ const Cart = () => {
       <hr />
       {/* if cartItems is null */}
       {cartItems.length === 0 ? (
-        <h1 className="cart__empty">Cart is empty</h1>
+        <h1 className="flex justify-center items-center h-[80vh] text-5xl font-extrabold text-[#E21B70]">Cart is empty</h1>
       ) : (
-        <h2>
+        <div>
+          <div className="flex justify-center items-center text-[#E21B70] font-bold text-xl pt-5 gap-5">
+         
+            <h2 className="w-60 text-center ">Item</h2>
+         
+            <h2 className="w-60 text-center">Name</h2>
+            <h2 className="w-60 text-center">Quantity</h2>
+            <h2   className="w-60 text-center">Price</h2>        
+            <h2   className="w-60 text-center">Remove</h2>        
+          </div>
           {cartItems.map((item, key) => (
-            <div key={key} className=" flex justify-center items-center mb-5 px-4 mt-5 gap-20">
-              <img
-                style={{
-                  width: 100,
-                  height: 100,
-                  marginRight: "20px",
-                  borderRadius: "20px",
-                }}
+            <div key={key} className=" flex justify-center items-center mb-5 gap-5 mt-5 ">
+           <div className="">
+           <div className="w-60 flex justify-center">
+            <img
+              className="w-40 h-32"
                 src={item.img}
                 alt=""
                
               />
+            </div>
+           </div>
+              <div className="w-60 text-center">
               <h2>{item.name}</h2>
-              <div className="h-6 w-2 flex justify-center items-center gap-5">
+              </div>
+             <div className="w-60 flex justify-center">
+             <div className="h-6 w-2 flex justify-center items-center gap-5">
                 <span onClick={() => minus(item.id)} className="minus bg-red-600 px-2 text-white cursor-pointer">
                   -
                 </span>
@@ -85,27 +97,32 @@ const Cart = () => {
                   +
                 </span>
               </div>
+             </div>
+              <div className="w-60 text-center">
               <h2 className="pri">
                 {item.countPrice > 0 ? item.countPrice : item.price}
               </h2>
+              </div>
               <hr />
+              <div className="w-60 flex justify-center">
               <button
                 onClick={() => handleRemove(item.id)}
-                className="bg-red-600 rounded px-4 text-white "
+                className="  text-red-600 cursor-pointer text-[30px]"
               >
-                remove
+               <MdDeleteForever />
               </button>
+              </div>
             </div>
           ))}
           <hr />
 
-          <div className="flex justify-end items-center pr-5">
-            <button className="mr-8 bg-orange-400 rounded-md p-2 text-white hover:bg-lime-400 ">
+          <div className="flex justify-end items-center pr-5 mt-2">
+            <button className="mr-8 bg-[#E21B70] text-lg rounded-md p-2 px-8 border border-[#E21B70] text-white hover:bg-gray-200 hover:text-[#E21B70]">
               Payment
             </button>
-            <h2>Total: {total}</h2>
+            <h2 className="border-b-[#E21B70] border-b-2 py-2 text-lg">Total: {total}</h2>
           </div>
-        </h2>
+        </div>
       )}
     </div>
   );

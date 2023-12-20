@@ -1,53 +1,33 @@
-
-import food from "../../images/d_food.png";
-import chef from "../../images/chef.png";
-import service from "../../images/f_service.png";
+import food from "../../../public/images/food.jpg"
+import chef from "../../../public/images/chef.png"
+import service from "../../../public/images/services.jpg"
 
 const Welcome = () => {
   return (
     <div className="container mx-auto">
-      <div className="mt-24 mb-16 overflow-hidden ">
-        <h2 className="text-center text-3xl font-bold mb-20">
-          Welcome to{" "}
-          <span className="font-bold text-orange-400">Fry Frenzy</span>
-          <p className="text-base font-normal text-orange-600">Where Chickens Rule and Your Taste</p>
-          <p className="text-base font-normal text-orange-600">Buds Drool!</p>
-        </h2>
-        <div className="  md:grid md:grid-cols-2 justify-items-center lg:grid lg:grid-cols-3 mx-10">
-          <div className="card   bg-base-100 ">
-            <figure>
-              <img className="h-36 w-36 ml-2 " src={food} alt="" />
-            </figure>
-            <div className="card-body items-center">
-              <h2 className="card-title ">Delicious Food</h2>
-              <p>
-                We provide you with different cuisines of food to satisfy your
-                hunger.
-              </p>
+      <div className=" mt-28 mb-10 overflow-hidden ">
+        <h2 className="font-bold text-[#E21B70] text-center text-[40px] pb-16 uppercase">{`The Garden of Eat'n`}</h2>
+        <div className="flex flex-col items-center md:flex-row justify-center justify-items-center gap-5">
+                <div className="flex flex-col items-center">
+                  <img className="w-60" src={food}/>
+                    <p className="text-2xl font-bold mb-2">Delicious Food</p>
+                    <p className="text-sm text-center">We provide you with different cuisines of food to satisfy your hunger.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                <img className="w-60" src={chef}/>
+                    <p className="text-2xl font-bold mb-2">Experienced Chef</p>
+                   
+                    <p className="text-sm text-center">If you are a happy person around food, we have the right chef for you.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                <img className="w-60" src={service}/>
+                    <p className="text-2xl font-bold mb-2">Quality Services</p>
+                  
+                    <p className="text-sm text-center">{`The Garden of Eat'n provides the best services for their customer.`}</p>
+                </div>
+               
+
             </div>
-          </div>
-          <div className="card   bg-base-100 ">
-            <figure>
-              <img className="h-36 w-36 ml-2" src={chef} alt="" />
-            </figure>
-            <div className="card-body items-center  ">
-              <h2 className="card-title">Experienced Chef</h2>
-              <p className="">
-                {`If you're a happy person around food, we have the right chef for
-                you.`}
-              </p>
-            </div>
-          </div>
-          <div className="card   bg-base-100 ">
-            <figure>
-              <img className="h-36 w-36 ml-2" src={service} alt="" />
-            </figure>
-            <div className="card-body items-center">
-              <h2 className="card-title">Quality Services</h2>
-              <p>Fry Frenzy provides the best services for their customer</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

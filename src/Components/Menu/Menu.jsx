@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Menu = () => {
   const data = [
@@ -104,28 +105,36 @@ const Menu = () => {
   };
 
   return (
-    <div className="">
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 mx-5 justify-items-center gap-y-20">
+    <div id="menu" className="pb-20 pt-16">
+      <div className="container mx-auto  " >
+      <div>
+        <h2 className="font-bold text-[#E21B70] text-center text-[40px] pb-16 uppercase">
+          Menu
+        </h2>
+      </div>
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 mx-5 justify-items-center gap-5">
         {data.map((item) => (
-          <div
+          <div className=""
             key={item.id}
             onClick={() => HandleImage(item.img, item.name, item.price)}
           >
-            <div className="border border-gray-200 rounded-md p-4">
+            <div className=" border border-[#E21B70]">
               <img
-                className="h-48 w-52 rounded-md"
+                className="w-80 h-60 "
                 src={item.img}
                 alt={item.name}
               />
-              <h2 className="card-title font-bold">{item.name}</h2>
-              <p className="text-lg font-bold text-red-700">${item.price}</p>
-              <Link to="/cart">
+              <h2 className="text-lg font-bold px-2">{item.name}</h2>
+              <p className="text-xl font-bold text-red-700 px-2">${item.price}</p>
+              <Link to="/cart" className="flex justify-center gap-2 py-2 mt-2 items-center w-full text-white bg-[#E21B70] hover:bg-gray-200 hover:text-[#E21B70] border-t border-[#E21B70]">
                 <button
                   onClick={() => handleAddMenu(item)}
-                  className="bg-orange-400 hover:bg-lime-400 text-white font-semibold p-2 rounded-btn mt-2"
+                  className="   font-semibold  "
                 >
-                  Add To Cart
+                  Add To Cart 
+                 
                 </button>
+                <FaShoppingCart className="" />
               </Link>
             </div>
           </div>
@@ -153,12 +162,11 @@ const Menu = () => {
           </p>
 
           <span onClick={HandleClose} className="closeBtn  cursor-pointer">
-        X
-      </span>
+            X
+          </span>
         </div>
-       
       </div>
-      
+    </div>
     </div>
   );
 };
