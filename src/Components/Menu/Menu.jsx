@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import { FaShoppingCart } from "react-icons/fa";
+import { MdAddCircle } from "react-icons/md";
 
 const Menu = () => {
   const data = [
@@ -112,29 +112,29 @@ const Menu = () => {
           Menu
         </h2>
       </div>
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 mx-5 justify-items-center gap-5">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-5 justify-items-center gap-10">
         {data.map((item) => (
           <div className=""
             key={item.id}
             onClick={() => HandleImage(item.img, item.name, item.price)}
           >
-            <div className=" border border-[#E21B70]">
+            <div className="shadow-md rounded-xl">
               <img
-                className="w-80 h-60 "
+                className="w-80 h-60 rounded-t-xl "
                 src={item.img}
                 alt={item.name}
               />
-              <h2 className="text-lg font-bold px-2">{item.name}</h2>
-              <p className="text-xl font-bold text-red-700 px-2">${item.price}</p>
-              <Link to="/cart" className="flex justify-center gap-2 py-2 mt-2 items-center w-full text-white bg-[#E21B70] hover:bg-gray-200 hover:text-[#E21B70] border-t border-[#E21B70]">
+              <h2 className="text-lg pt-2 font-bold px-2">{item.name}</h2>
+              <p className="text-xl  font-bold text-red-700 px-2">${item.price}</p>
+              <Link to="/cart"  onClick={() => handleAddMenu(item)} className="flex justify-center gap-2 py-2 mt-2 items-center w-full rounded-b-xl bg-gray-100 hover:bg-gray-200 text-[#E21B70] border-t border-[#E21B70]">
                 <button
-                  onClick={() => handleAddMenu(item)}
+                 
                   className="   font-semibold  "
                 >
                   Add To Cart 
                  
                 </button>
-                <FaShoppingCart className="" />
+                <MdAddCircle className="text-2xl text-green-600"/>
               </Link>
             </div>
           </div>

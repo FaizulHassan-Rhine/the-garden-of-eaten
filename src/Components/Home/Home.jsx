@@ -12,7 +12,7 @@ import OurFlavours from "../OurFlavours/OurFlavours";
 
 import Menu from "../Menu/Menu";
 import Reviews from "../Reviews/Reviews";
-import ContactUs from "../ContactUs/ContactUs";
+
 
 const Home = () => {
 
@@ -58,7 +58,7 @@ const Home = () => {
       {/* <MenuList ></MenuList> */}
       <Reviews></Reviews>
       {/* <Blog></Blog> */}
-      <ContactUs/>
+      {/* <ContactUs/> */}
       <Footer></Footer>
     </div>
   );

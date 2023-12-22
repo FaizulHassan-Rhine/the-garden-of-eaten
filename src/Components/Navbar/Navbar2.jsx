@@ -131,7 +131,7 @@ const Navbar2 = () => {
                     </Link>
                   </button>
                   <Link to="/login">
-                    <button className="bg-[#E21B70] hover:bg-green-500 px-2 py-1 rounded-md text-white font-medium">
+                    <button className="bg-[#E21B70] hover:bg-gray-300 border border-[#E21B70] hover:text-[#E21B70] px-4 py-1 rounded-md text-white font-medium">
                       Sign in
                     </button>
                   </Link>
@@ -146,10 +146,11 @@ const Navbar2 = () => {
                     <FaShoppingCart className="mr-2 w-6 h-6 hover:text-[#E21B70]" />
                   </Link>
                 </button>
-
-                <button className="bg-[#E21B70] hover:bg-green-500 px-2 py-1 rounded-md text-white font-medium">
-                  <Link to="/login">Sign in</Link>
+                <Link to="/login">
+                <button className="bg-[#E21B70] hover:bg-gray-300 border border-[#E21B70] hover:text-[#E21B70] px-4 py-1 rounded-md text-white font-medium">Sign in
+                
                 </button>
+                </Link>
               </div>
             </div>
           </div>
