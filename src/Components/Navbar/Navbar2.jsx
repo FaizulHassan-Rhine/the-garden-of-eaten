@@ -22,7 +22,7 @@ const Navbar2 = () => {
     <div className="w-full bg-white sticky shadow-sm top-0 z-[999]">
       <div className="container mx-auto">
         <nav className="w-full bg-white  ">
-          <div className="justify-between px-4 mx-auto  lg:max-w-7xl lg:items-center lg:flex lg:px-8">
+          <div className="justify-between mx-auto  lg:max-w-7xl lg:items-center lg:flex ">
             <div>
               <div className="flex items-center justify-between py-3 lg:py-2 lg:block">
                 <HashLink to="/#root">

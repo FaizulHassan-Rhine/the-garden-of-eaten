@@ -56,7 +56,7 @@ const Home = () => {
       
       
       {/* <MenuList ></MenuList> */}
-      <Reviews></Reviews>
+      {/* <Reviews></Reviews> */}
       {/* <Blog></Blog> */}
       {/* <ContactUs/> */}
       <Footer></Footer>
