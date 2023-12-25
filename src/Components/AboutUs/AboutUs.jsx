@@ -6,7 +6,7 @@ const AboutUs = () => {
             <section className="text-gray-700 body-font relative">
                 <div className="container px-5 py-4 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
-                        <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-orange-400">
+                        <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-[#E52491]">
                             About Us
                         </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -25,7 +25,7 @@ const AboutUs = () => {
                             {`So come on down to Fry Frenzy, where we'll whisk you away on a chicken-fueled escapade. We're here to satisfy your cravings, bring smiles to your faces, and prove that great food can be both delicious and delightfully funny. Get ready to fry in the cloud and savor the tastiest frenzy you've ever experienced!`}
                         </p>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                            <span className="text-orange-400 font-semibold">Fry Frenzy:</span> Where flavor takes flight and laughter is the secret ingredient!
+                            <span className="text-[#E52491] font-semibold">Fry Frenzy:</span> Where flavor takes flight and laughter is the secret ingredient!
                         </p>
                     </div>
                 </div>

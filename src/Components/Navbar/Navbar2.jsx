@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import logo from "../../../public/images/restaurant-logo3.png";
+import logo from "../../../public/images/logo4.png";
 import { Link } from "react-router-dom";
 
 import { HashLink } from "react-router-hash-link";
@@ -24,9 +24,9 @@ const Navbar2 = () => {
         <nav className="w-full bg-white  ">
           <div className="justify-between mx-auto  lg:max-w-7xl lg:items-center lg:flex ">
             <div>
-              <div className="flex items-center justify-between py-3 lg:py-2 lg:block">
+              <div className="flex items-center justify-between py-3 lg:py-1 lg:block">
                 <HashLink to="/#root">
-                  <img className="w-60 h-10" src={logo} />
+                  <img className="w-60 h-12" src={logo} />
                 </HashLink>
                 <div className="lg:hidden">
                   <button
@@ -78,8 +78,8 @@ const Navbar2 = () => {
                       smooth
                       to="/#root"
                       onClick={() => handleLinkClick("homee")}
-                      className={` hover:text-[#F70083] ${
-                        activeLink === "homee" ? "text-[#F70083]" : ""
+                      className={` hover:text-[#E52491] ${
+                        activeLink === "homee" ? "text-[#E52491]" : ""
                       }`}
                     >
                       Home
@@ -90,8 +90,8 @@ const Navbar2 = () => {
                       smooth
                       to="/#menu"
                       onClick={() => handleLinkClick("menu")}
-                      className={`hover:text-[#F70083] ${
-                        activeLink === "menu" ? "text-[#F70083]" : ""
+                      className={`hover:text-[#E52491] ${
+                        activeLink === "menu" ? "text-[#E52491]" : ""
                       }`}
                     >
                       Menu
@@ -101,8 +101,8 @@ const Navbar2 = () => {
                     <Link
                       to="/contact-us"
                       onClick={() => handleLinkClick("contact")}
-                      className={`  hover:text-[#F70083] ${
-                        activeLink === "contact" ? "text-[#F70083]" : ""
+                      className={`  hover:text-[#E52491] ${
+                        activeLink === "contact" ? "text-[#E52491]" : ""
                       }`}
                     >
                       Contact{" "}
@@ -115,8 +115,8 @@ const Navbar2 = () => {
                       smooth
                       to="/about-us"
                       onClick={() => handleLinkClick("about")}
-                      className={`  hover:text-[#F70083] ${
-                        activeLink === "about" ? "text-[#F70083]" : ""
+                      className={`  hover:text-[#E52491] ${
+                        activeLink === "about" ? "text-[#E52491]" : ""
                       }`}
                     >
                       About Us
