@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <div className="container mx-auto">
       <div className=" mt-28 mb-10 overflow-hidden ">
-        <h2 className="font-bold text-[#E21B70] text-center text-[40px] pb-16 uppercase">{`The Garden of Eat'n`}</h2>
+        <h2 className="font-bold text-[#E52491] text-center text-[40px] pb-16 uppercase">{`The Garden of Eat'n`}</h2>
         <div className="flex flex-col items-center md:flex-row justify-center justify-items-center gap-5">
                 <div className="flex flex-col items-center">
                   <img className="w-60" src={food}/>

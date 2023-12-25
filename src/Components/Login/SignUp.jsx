@@ -24,7 +24,7 @@ const SignUp = () => {
                     type="button"
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
-                    className="inline-block p-3 bg-[#E21B70] text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-[#E21B70] hover:shadow-lg focus:bg-[#E21B70] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#E21B70] active:shadow-lg transition duration-150 ease-in-out mx-1"
+                    className="inline-block p-3 bg-[#E52491] text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-[#E52491] hover:shadow-lg focus:bg-[#E52491] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#E52491] active:shadow-lg transition duration-150 ease-in-out mx-1"
                   >
                     <FaFacebookSquare className="h-4 w-4" />
                   </button>
@@ -33,7 +33,7 @@ const SignUp = () => {
                     type="button"
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
-                    className="inline-block p-3 bg-[#E21B70] text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-[#E21B70] hover:shadow-lg focus:bg-[#E21B70] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#E21B70] active:shadow-lg transition duration-150 ease-in-out mx-1"
+                    className="inline-block p-3 bg-[#E52491] text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-[#E52491] hover:shadow-lg focus:bg-[#E52491] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#E52491] active:shadow-lg transition duration-150 ease-in-out mx-1"
                   >
                     <FaGoogle className="h-4 w-4"></FaGoogle>
                   </button>
@@ -46,7 +46,7 @@ const SignUp = () => {
                 <div className="mb-6">
                   <input
                     type="text"
-                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E21B70] focus:outline-none"
+                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E52491] focus:outline-none"
                     id="exampleFormControlInput2"
                     placeholder="Your Name"
                   />
@@ -54,7 +54,7 @@ const SignUp = () => {
                 <div className="mb-6">
                   <input
                     type="text"
-                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E21B70] focus:outline-none"
+                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E52491] focus:outline-none"
                     id="exampleFormControlInput2"
                     placeholder="Email address"
                   />
@@ -63,7 +63,7 @@ const SignUp = () => {
                 <div className="mb-6">
                   <input
                     type="password"
-                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E21B70] focus:outline-none"
+                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E52491] focus:outline-none"
                     id="exampleFormControlInput2"
                     placeholder="Password"
                   />
@@ -71,7 +71,7 @@ const SignUp = () => {
                 <div className="mb-6">
                   <input
                     type="password"
-                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E21B70] focus:outline-none"
+                    className="form-control block w-full px-4 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-[#E52491] focus:outline-none"
                     id="exampleFormControlInput2"
                     placeholder="Confirm Password"
                   />
@@ -81,7 +81,7 @@ const SignUp = () => {
                   <div className="form-group form-check">
                     <input
                       type="checkbox"
-                      className="form-check-input appearance-none h-4 w-4  border border-gray-300 rounded-sm bg-white checked:bg-[#E21B70] checked:border-[#E21B70] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                      className="form-check-input appearance-none h-4 w-4  border border-gray-300 rounded-sm bg-white checked:bg-[#E52491] checked:border-[#E52491] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                       id="exampleCheck2"
                     />
                     <label
@@ -96,7 +96,7 @@ const SignUp = () => {
                 <div className="text-center lg:text-left">
                   <button
                     type="button"
-                    className="inline-block px-6 py-2 font-semibold bg-[#E21B70] text-white  text-sm leading-snug uppercase rounded-md shadow-md hover:bg-gray-300 border border-[#E21B70] hover:text-[#E21B70] hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#E21B70] active:shadow-lg active:text-white transition duration-150 ease-in-out"
+                    className="inline-block px-6 py-2 font-semibold bg-[#E52491] text-white  text-sm leading-snug uppercase rounded-md shadow-md hover:bg-gray-300 border border-[#E52491] hover:text-[#E52491] hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#E52491] active:shadow-lg active:text-white transition duration-150 ease-in-out"
                   >
                     Sign Up
                   </button>
@@ -105,7 +105,7 @@ const SignUp = () => {
                     <Link to="/login">
                       <a
                         href="#!"
-                        className="text-[#E21B70]  focus:text-[#E21B70] transition duration-200 ease-in-out"
+                        className="text-[#E52491]  focus:text-[#E52491] transition duration-200 ease-in-out"
                       >
                         Sign in
                       </a>

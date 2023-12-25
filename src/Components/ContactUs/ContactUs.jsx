@@ -56,7 +56,7 @@ const ContactUs = () => {
         <section className="text-gray-700 body-font relative">
           <div className="container px-5 py-12 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-            <h2 className="font-bold text-[#E21B70] text-center text-[40px]  uppercase"> Contact Us</h2>
+            <h2 className="font-bold text-[#E52491] text-center text-[40px]  uppercase"> Contact Us</h2>
                
     
               <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
@@ -79,7 +79,7 @@ const ContactUs = () => {
                         id="name"
                         name="name"
                         required
-                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-[#E21B70] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-[#E52491] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
                   </div>
@@ -96,13 +96,13 @@ const ContactUs = () => {
                         id="email"
                         name="email"
                         required
-                        className={`w-full bg-gray-100 rounded border ${isValidEmail ? "border-gray-300" : "border-[#E21B70]"
-                          } focus:border-[#E21B70] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
+                        className={`w-full bg-gray-100 rounded border ${isValidEmail ? "border-gray-300" : "border-[#E52491]"
+                          } focus:border-[#E52491] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
                         // value={email}
                         
                       />
                       {!isValidEmail && (
-                        <p className="text-[#E21B70] text-sm mt-1">
+                        <p className="text-[#E52491] text-sm mt-1">
                           Please enter a valid email address.
                         </p>
                       )}
@@ -120,12 +120,12 @@ const ContactUs = () => {
                         id="message"
                         name="message"
                         required
-                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-[#E21B70] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-[#E52491] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                       ></textarea>
                     </div>
                   </div>
                   <div className="p-2 w-full">
-                    <button className="flex mx-auto text-white font-semibold bg-[#E21B70]  py-2 px-8 focus:outline-none hover:bg-gray-200 border border-[#E21B70] hover:text-[#E21B70] rounded text-base">
+                    <button className="flex mx-auto text-white font-semibold bg-[#E52491]  py-2 px-8 focus:outline-none hover:bg-gray-200 border border-[#E52491] hover:text-[#E52491] rounded text-base">
                       SEND
                     </button>
                   </div>

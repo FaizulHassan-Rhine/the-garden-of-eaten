@@ -127,11 +127,11 @@ const Navbar2 = () => {
                 <div className="mt-3 flex flex-col justify-center  items-center space-y-2 lg:hidden ">
                   <button id="singInButton">
                     <Link to="/cart">
-                      <FaShoppingCart className="mr-2 w-6 h-6 hover:text-[#E21B70]" />
+                      <FaShoppingCart className="mr-2 w-6 h-6 hover:text-[#E52491]" />
                     </Link>
                   </button>
                   <Link to="/login">
-                    <button className="bg-[#E21B70] hover:bg-gray-300 border border-[#E21B70] hover:text-[#E21B70] px-4 py-1 rounded-md text-white font-medium">
+                    <button className="bg-[#E52491] hover:bg-gray-300 border border-[#E52491] hover:text-[#E52491] px-4 py-1 rounded-md text-white font-medium">
                       Sign in
                     </button>
                   </Link>
@@ -143,11 +143,11 @@ const Navbar2 = () => {
               <div className="flex justify-center items-center gap-2">
                 <button id="singInButton">
                   <Link to="/cart">
-                    <FaShoppingCart className="mr-2 w-6 h-6 hover:text-[#E21B70]" />
+                    <FaShoppingCart className="mr-2 w-6 h-6 hover:text-[#E52491]" />
                   </Link>
                 </button>
                 <Link to="/login">
-                <button className="bg-[#E21B70] hover:bg-gray-300 border border-[#E21B70] hover:text-[#E21B70] px-4 py-1 rounded-md text-white font-medium">Sign in
+                <button className="bg-[#E52491] hover:bg-gray-300 border border-[#E52491] hover:text-[#E52491] px-4 py-1 rounded-md text-white font-medium">Sign in
                 
                 </button>
                 </Link>
