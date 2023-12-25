@@ -56,7 +56,7 @@ const ContactUs = () => {
         <section className="text-gray-700 body-font relative">
           <div className="container px-5 py-12 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-            <h2 className="font-bold text-[#E52491] text-center text-[40px]  uppercase"> Contact Us</h2>
+            <h2 className="font-bold text-[#E52491] text-center text-[32px]  uppercase"> Contact Us</h2>
                
     
               <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
