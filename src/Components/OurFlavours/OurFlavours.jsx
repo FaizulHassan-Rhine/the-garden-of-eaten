@@ -8,7 +8,7 @@ const OurFlavours = () => {
             <h2 className="font-bold text-[#E52491] text-center text-[40px] pb-16 uppercase">
             know our Flavors
         </h2>
-            <div className="flex flex-col items-center md:flex-row justify-center justify-items-center gap-5">
+            <div className="flex flex-col items-center md:flex-row justify-center justify-items-center gap-5 flavour">
                 <div className=" bg-white  w-96 md:h-44 lg:h-36 p-4 rounded-lg shadow-md shadow-[#ED76A9] ">
                     <p className="text-xl font-bold mb-2">Signature</p>
                     <div className="flex gap-1 justify-items-center">

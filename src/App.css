@@ -1,9 +1,68 @@
+:root {
+  --primary-blue: rgb(0, 0, 255);
+  --secondary-blue: rgb(96, 96, 182);
 
-  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tiro+Bangla&display=swap');
+  --text-primary-light: black;
+  --text-primary-dark: white;
 
- .bangla-font{
-    
-        font-family: 'Tiro Bangla', serif;
-    
-      
- }
+  --text-secondary-light: rgb(70, 70, 70);
+  --text-secondary-dark: white;
+
+  --bg-primary-light: white;
+  --bg-primary-dark: black;
+
+  --bg-secondary-light: rgb(212, 212, 212);
+  --bg-secondary-dark: rgb(34, 34, 34);
+
+  --bg-navbar-light: rgb(104, 104, 255);
+  --bg-navbar-dark: rgb(29, 29, 58);
+}
+
+.light-theme {
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+  --bg-navbar: var(--bg-navbar-light);
+}
+
+.dark-theme {
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --bg-navbar: var(--bg-navbar-dark);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+input, label, button, p, span, h1, h2, h3, h4, h5, h6, a {
+  color: var(--text-primary);
+  
+}
+.footer  {
+   background-color: var(--bg-primary);
+}
+.flavour div{
+       background-color: var(--bg-primary);
+       color: var(--text-primary);
+}
+
+.menu-l{
+       background-color: var(--bg-primary);
+       color: var(--text-primary);
+}
+
+.navbar-c {
+       background-color: var(--bg-primary);
+       color: var(--text-primary);
+}

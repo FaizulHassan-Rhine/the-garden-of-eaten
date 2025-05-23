@@ -4,6 +4,7 @@ import logo from "../../../public/images/logo4.png";
 import { Link } from "react-router-dom";
 
 import { HashLink } from "react-router-hash-link";
+import ToggleButton from "../ToggleButton/ToggleButton";
 
 const Navbar2 = () => {
   const [navbar, setNavbar] = useState(false);
@@ -19,9 +20,10 @@ const Navbar2 = () => {
   // }
 
   return (
-    <div className="w-full bg-white sticky shadow-sm top-0 z-[999]">
+    <div className="">
+      <div className="w-full  bg-white sticky shadow-sm top-0 z-[999]">
       <div className="container mx-auto">
-        <nav className="w-full bg-white  ">
+        <nav className="w-full bg-white  navbar-c">
           <div className="justify-between mx-auto  lg:max-w-7xl lg:items-center lg:flex ">
             <div>
               <div className="flex items-center justify-between py-3 lg:py-1 lg:block">
@@ -153,9 +155,11 @@ const Navbar2 = () => {
                 </Link>
               </div>
             </div>
+            <ToggleButton/>
           </div>
         </nav>
       </div>
+    </div>
     </div>
   );
 };

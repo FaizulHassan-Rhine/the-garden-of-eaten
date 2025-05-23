@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#F4F3EF]">
+    <div className="footer bg-[#F4F3EF]">
       <footer className="footer container mx-auto lg:justify-items-center py-5 text-black grid lg:grid-cols-4">
         <div className="lg:px-8">
           <figure>

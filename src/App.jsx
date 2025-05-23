@@ -16,6 +16,8 @@ import Navbar2 from "./Components/Navbar/Navbar2";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Thankyou from "./Components/Thankyou/Thankyou";
 import PurchasePolicy from "./Components/PurchasePolicy/PurchasePolicy";
+import { useContext, useEffect } from "react";
+import { ThemeContext } from "./Theme";
 
 // import TermsConditionBangla from "./Components/TermsCondition/TermsConditionBangla";
 // import PrivacyPolicyBangla from "./Components/PrivacyPolicy/PrivacyPolicyBangla";
@@ -23,8 +25,11 @@ import PurchasePolicy from "./Components/PurchasePolicy/PurchasePolicy";
 // import CookiePolicyBangla from "./Components/CookiePolicy/CookiePolicyBangla";
 
 function App() {
+   const { theme } = useContext(ThemeContext);
+// In App.js or RootLayout.js
+
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
       <Scroll></Scroll>
       <Navbar2 />
       {/* <Navbar></Navbar> */}

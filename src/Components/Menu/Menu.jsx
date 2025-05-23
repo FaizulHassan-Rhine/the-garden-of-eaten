@@ -126,7 +126,7 @@ const Menu = () => {
               />
               <h2 className="text-lg pt-2 font-bold px-2">{item.name}</h2>
               <p className="text-xl  font-bold text-red-700 px-2">${item.price}</p>
-              <Link to="/cart"  onClick={() => handleAddMenu(item)} className="flex justify-center gap-2 py-2 mt-2 items-center w-full rounded-b-xl bg-gray-100 hover:bg-gray-200 text-[#E52491] border-t border-[#E52491]">
+              <Link to="/cart"  onClick={() => handleAddMenu(item)} className="flex menu-l hover:text-[#E52491] text-[#E52491] justify-center gap-2 py-2 mt-2 items-center w-full rounded-b-xl bg-gray-100 hover:bg-gray-200  border-t border-[#E52491]">
                 <button
                  
                   className="   font-semibold  "
